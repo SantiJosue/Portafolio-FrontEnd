@@ -23,9 +23,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/boxicons/css/boxicons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/boxicons/dist/boxicons.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e4977569-3d87-41af-952c-f014b758445d"
   }
 }
