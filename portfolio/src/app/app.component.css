@@ -4,19 +4,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: linear-gradient(135deg, rgb(14, 42, 71) 0%, rgb(1, 79, 179) 100%);
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: #0077ff;
-    border-radius: 15px;
-}
-
 /* ===== NAVBAR =====*/
 
 .navbar{
