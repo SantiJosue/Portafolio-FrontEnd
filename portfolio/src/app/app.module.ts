@@ -9,6 +9,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { BannerComponent } from './componentes/banner/banner.component';
+import { NavComponent } from './componentes/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './componentes/footer/footer.component';
     ExperienciaYEducacionComponent,
     HysComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    BannerComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

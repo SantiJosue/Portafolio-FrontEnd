@@ -1,0 +1,157 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, rgb(14, 42, 71) 0%, rgb(1, 79, 179) 100%);
+}
+
+.navbar-toggler{
+    position: absolute;
+    right: 20px;
+    z-index: 10;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.navbar-nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link{
+    transition: all .3s ease;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.navbar-logo{
+    width: 140px;
+    height: 80px;
+    background-color: transparent;
+    display: block;
+}
+
+/* ICONS */
+
+#icon-instagram{
+    font-size: 40px;
+    background-image: linear-gradient(120deg, #c0c0c0 0%, #0fff07 100%);
+    border-radius: 20%;
+    filter: invert(1);
+    color: #000;
+}
+
+#icon-linkedin{
+    font-size: 40px;
+    border-radius: 20%;
+    color: #fff;
+    background-color: #0084ff;
+}
+
+#icon-github{
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+/* //ICONS */
+
+.nav-link--active{
+    padding: 8px 20px;
+    background-color: white;
+    border: 1px solid transparent;
+    color: #0077ff;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    margin-left: 10px;
+}
+
+.nav-link--active:hover{
+    color: white;
+    background-color: #0084ff;
+}
+
+.nav-btn{
+    border: none;
+    background: none;
+}
+
+@media (max-width: 992px){
+
+    .navbar{
+        height: 60px;
+        border: none;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .navbar-toggler{
+        position: absolute;
+        right: 15px;
+    }
+
+    .navbar-toggler{
+        margin-bottom: 10px;
+    }
+    
+    .navbar-toggler:hover{
+        background-color: #1a4896;
+    }
+    
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 60px);
+        width: 80px;
+        position: fixed;
+        right: 0;
+        top: 49px;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgb(14, 42, 71) 0%, rgb(1, 79, 179) 100%);
+    }
+    
+    .nav-link{
+        margin-top: 20px;
+    }
+
+    .nav-btn{
+        margin-top: 20px;
+    }
+    
+    .navbar-brand{
+        margin-top: -8px;
+    }
+    
+    .navbar-logo{
+        width: 120px;
+        height: 60px;
+        display: block;
+        object-fit: cover;
+    }
+    
+    .nav-link--active{
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+
+    .nav-link--active:hover{
+        padding: 5px 10px;
+    }
+    
+    }

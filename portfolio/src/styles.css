@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -9,4 +15,14 @@
 ::-webkit-scrollbar-thumb{
     background-color: #0077ff;
     border-radius: 15px;
+}
+
+body{
+    width: 100%;
+    background-image: url(../src/assets/background.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    overflow-x: hidden;
 }

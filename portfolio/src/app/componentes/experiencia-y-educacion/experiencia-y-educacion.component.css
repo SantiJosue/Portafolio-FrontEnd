@@ -1,0 +1,120 @@
+.study-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    border-top: 1px solid gray;
+}
+
+.study-container h5{
+    font-weight: bold;
+}
+
+.study-container ul{
+    list-style: none;
+}
+
+.study-1{
+    padding: 5px 10px;
+    background-color: rgba(18, 61, 252, 0.527);
+    border-radius: 20px;
+    border: 1px solid rgb(207, 207, 207);
+    transition: all .3s ease;
+}
+
+.study-1:hover{
+    background-color: rgba(30, 70, 252, 0.527);
+}
+
+.study-2{
+    padding: 5px 10px;
+    background-color: rgba(18, 61, 252, 0.527);
+    border-radius: 20px;
+    border: 1px solid rgb(207, 207, 207);
+    transition: all .3s ease;
+}
+
+.study-2:hover{
+    background-color: rgba(30, 70, 252, 0.527);
+}
+
+.study-title{
+    font-weight: 400;
+    text-align: center;   
+}
+
+@media (max-width: 992px) {
+
+    .study-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -3rem;
+    }
+
+    .study-container p{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    
+    .study-1{
+        width: 80%;
+        padding: 6px 6px;
+        border-radius: 20px;
+        border: 1px solid rgb(207, 207, 207);
+        transition: all .3s ease;
+        margin-top: 15px;
+    }
+
+    .study-1 p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .study-2{
+        width: 80%;
+        padding: 2px 6px;
+        border-radius: 20px;
+        border: 1px solid rgb(207, 207, 207);
+        transition: all .3s ease;
+        margin-top: 15px;
+    }
+
+    .study-2 p{
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .study-title{
+        font-weight: 600;
+        font-size: 18px;    
+    }
+
+    .section-habilities{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-habilities-2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -3rem;
+    }
+
+    .section-habilities h4{
+        margin: 1.5rem 0rem;
+    }
+
+}
