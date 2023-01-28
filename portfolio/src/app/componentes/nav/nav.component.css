@@ -2,6 +2,7 @@
     width: 100%;
     height: 80px;
     background: linear-gradient(135deg, rgb(14, 42, 71) 0%, rgb(1, 79, 179) 100%);
+    box-shadow: 3px 3px 10px 1px #141414d8;
 }
 
 .navbar-toggler{
@@ -39,7 +40,7 @@
 
 #icon-instagram{
     font-size: 40px;
-    background-image: linear-gradient(120deg, #c0c0c0 0%, #0fff07 100%);
+    background-image: linear-gradient(120deg, blue 0.1%, #0fff07 60%, #0fff07 100%);
     border-radius: 20%;
     filter: invert(1);
     color: #000;
@@ -93,6 +94,7 @@
         border: none;
         position: fixed;
         z-index: 100;
+        box-shadow: 3px 3px 10px 1px #141414d8;
     }
     
     .navbar-toggler{
@@ -139,10 +141,9 @@
     }
     
     .navbar-logo{
-        width: 120px;
+        width: 110px;
         height: 60px;
         display: block;
-        object-fit: cover;
     }
     
     .nav-link--active{
