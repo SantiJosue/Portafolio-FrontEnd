@@ -18,6 +18,10 @@
     padding: 40px;
 }
 
+circle-progress{
+    cursor: pointer;
+}
+
 @media (max-width: 992px) {
     
     .section-habilities{

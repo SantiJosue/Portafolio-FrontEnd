@@ -11,6 +11,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { FooterComponent } from './componentes/footer/footer.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { NavComponent } from './componentes/nav/nav.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NavComponent } from './componentes/nav/nav.component';
     ProyectosComponent,
     FooterComponent,
     BannerComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,

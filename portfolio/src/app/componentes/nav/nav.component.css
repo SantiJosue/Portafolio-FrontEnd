@@ -18,7 +18,7 @@
 .navbar-nav{
     margin-top: 10px;
     display: flex;
-    justify-content: end;
+    flex: end;
 }
 
 .nav-link{
@@ -90,7 +90,9 @@
 @media (max-width: 992px){
 
     .navbar{
-        height: 60px;
+        height: 80px;
+        line-height: 80px;
+        top: 0;
         border: none;
         position: fixed;
         z-index: 100;
@@ -100,10 +102,6 @@
     .navbar-toggler{
         position: absolute;
         right: 15px;
-    }
-
-    .navbar-toggler{
-        margin-bottom: 10px;
     }
     
     .navbar-toggler:hover{
@@ -119,11 +117,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: calc(100% - 60px);
+        height: calc(100% - 80px);
         width: 80px;
         position: fixed;
         right: 0;
-        top: 49px;
+        top: 70px;
         overflow: hidden;
         background: linear-gradient(135deg, rgb(14, 42, 71) 0%, rgb(1, 79, 179) 100%);
     }
@@ -136,14 +134,11 @@
         margin-top: 20px;
     }
     
-    .navbar-brand{
-        margin-top: -8px;
-    }
-    
     .navbar-logo{
         width: 110px;
         height: 60px;
         display: block;
+        object-fit: cover;
     }
     
     .nav-link--active{
