@@ -29,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
