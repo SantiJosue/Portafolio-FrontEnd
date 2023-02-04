@@ -13,6 +13,9 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,10 +28,13 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     BannerComponent,
     NavComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({}),
+    AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot({})
   ],
