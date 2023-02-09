@@ -6,6 +6,7 @@ footer{
     align-items: center;
     flex-direction: column;
     background-color: rgba(16, 42, 85, 0.644);
+    font-weight: bold;
 }
 
 footer p a{
@@ -13,7 +14,7 @@ footer p a{
 }
 
 .bxs-chat{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media (max-width: 992px) {
