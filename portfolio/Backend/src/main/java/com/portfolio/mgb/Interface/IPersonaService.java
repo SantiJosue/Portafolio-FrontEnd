@@ -3,6 +3,7 @@ package com.portfolio.mgb.Interface;
 import com.portfolio.mgb.Entity.Persona;
 import java.util.List;
 
+
 public interface IPersonaService {
     //Traer una lista de personas
     public List<Persona> getPersona();

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-import { ExperienciaYEducacionComponent } from './componentes/experiencia-y-educacion/experiencia-y-educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
@@ -16,13 +15,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { interceptorProvider } from './service/interceptor-service';
+
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
+import { EditeducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     AcercaDeComponent,
-    ExperienciaYEducacionComponent,
+    ExperienciaComponent,
     HysComponent,
     ProyectosComponent,
     FooterComponent,
@@ -30,6 +42,11 @@ import { AppRoutingModule } from './app-routing.module';
     NavComponent,
     HomeComponent,
     LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EducacionComponent,
+    EditeducacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +55,9 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     NgCircleProgressModule.forRoot({})
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
