@@ -1,0 +1,115 @@
+.experience-container{
+    width: 100%;
+    padding: 40px;
+    border-top: 1px solid gray;
+}
+
+.experience-container p{
+    margin-top: 5px;
+}
+
+.experience-container ul{
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgba(30, 90, 255, 0.541);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: #0051ffb0;
+    border-radius: 10px;
+    border: 3px solid #0059fffb;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.experience:hover{
+    background-color: rgba(30, 70, 252, 0.527);
+    cursor: pointer;
+}
+
+.expe-content{
+    width: 100%;
+    overflow: hidden;
+}
+
+.experience-title{
+    font-weight: 400;
+    text-align: center;  
+}
+
+.buttons{
+    display: flex;
+}
+
+@media (max-width: 992px) {
+
+    .experience-container{
+        width: 100%;
+        padding: 0px;
+        border-top: 1px solid gray;
+    }
+
+    .experience-container h2{
+        margin-top: 20px;
+    }
+    
+    .experience-container p{
+        margin-top: 5px;
+    }
+    
+    .experience-container ul{
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    
+    .btn{
+        margin: 5px;
+    }
+
+    .btn-añadir{
+        text-align: center;
+    }
+    
+    .experience {
+        padding: 5px 10px;
+        background: none;
+        border: none;
+        transition: all .3s ease;
+        text-align: center;
+    }
+
+    .experience ul{
+        border: 3px solid #0059fffb;
+        background-color: #0051ffb0;
+        border-radius: 5px;
+    }
+
+    .experience li{
+        margin-top: 10px;
+    }
+    
+    .experience:hover{
+        background-color: rgba(30, 70, 252, 0.527);
+        cursor: pointer;
+    }
+    
+    .experience-title{
+        font-weight: 400;
+        text-align: center;  
+    }
+
+}

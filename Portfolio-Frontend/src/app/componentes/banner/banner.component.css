@@ -1,0 +1,22 @@
+.banner{
+    height: 40vh;
+    padding: 0 15px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/banner.jpg);
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px 10px 15px 15px;
+}
+
+@media (max-width: 992px) {
+
+.banner{
+    background-position: center;
+    height: 42vh;
+    padding: 0 5px;  
+}
+
+}
