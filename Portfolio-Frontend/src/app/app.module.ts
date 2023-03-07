@@ -1,64 +1,62 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HysComponent } from './componentes/hys/hys.component';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { BannerComponent } from './componentes/banner/banner.component';
-import { NavComponent } from './componentes/nav/nav.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './componentes/home/home.component';
-import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component';
+import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './components/hys/hys.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
-
-import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
-import { EditeducacionComponent } from './componentes/educacion/edit-educacion.component';
-import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
-import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
-import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
-
-
-
-
-
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
+    HeaderComponent,
+    LogoAPComponent,
+    BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
+    EducacionComponent,
     HysComponent,
-    ProyectosComponent,
+    ProyectoComponent,
     FooterComponent,
-    BannerComponent,
-    NavComponent,
     HomeComponent,
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
-    NewEducacionComponent,
-    EducacionComponent,
+    NeweducacionComponent,
     EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [
     interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }
