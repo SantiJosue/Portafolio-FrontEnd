@@ -1,2 +1,2 @@
 # Portfolio-Frontend
-portafolio completo
+repositorio para el front.
