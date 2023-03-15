@@ -4,8 +4,6 @@ import { EditeducacionComponent } from "./componentes/educacion/edit-educacion.c
 import { NewEducacionComponent } from "./componentes/educacion/new-educacion.component";
 import { EditExperienciaComponent } from "./componentes/experiencia/edit-experiencia.component";
 import { NewExperienciaComponent } from "./componentes/experiencia/new-experiencia.component";
-
-
 import { HomeComponent } from "./componentes/home/home.component";
 import { LoginComponent } from "./componentes/login/login.component";
 
