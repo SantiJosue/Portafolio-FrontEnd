@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = "https://backendapp-tcou.onrender.com/auth/";
+  authURL = 'https://portfolio-back-pjc0.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
