@@ -13,10 +13,6 @@ footer p a{
     color: #00a2ff;
 }
 
-.bxs-chat{
-    font-size: 22px;
-}
-
 @media (max-width: 992px) {
 
     footer{
@@ -32,10 +28,6 @@ footer p a{
 
     footer p a{
         text-align: center;
-    }
-
-    .bxs-chat{
-        font-size: 12px;
     }
 
 }
