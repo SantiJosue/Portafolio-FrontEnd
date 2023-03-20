@@ -3,16 +3,20 @@
     <div class="row">
         <h2 class="text-light mt-2 text-center">Hard & Soft Skills</h2>
         <h3 class="text-light mt-4">Hard Skills:</h3>
-        <article class="col-sm-6 col-md-4 col-lg-4">
+        <div>
+            <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of skill">
         <circle-progress
-            [imageSrc]="'../assets/html.png'"
+            [percent]="(skill.porcentaje)"
+            [radius]="100"
+            [imageSrc]="''"
+            [title]="(skill.nombre)"
             [imageHeight]="100"
             [imageWidth]="100"
             [backgroundColor]="'#0077ff'"
             [showImage]="true"
             [unitsFontSize]="'20'"
-            [percent]="90"
-            [radius]="100"
             [outerStrokeWidth]="16"
             [innerStrokeWidth]="8"
             [outerStrokeColor]="'orange'"
@@ -20,11 +24,16 @@
             [animation]="true"
             [animationDuration]="800"
         ></circle-progress>
-        </article>
 
-    <article class="col-sm-6 col-md-4 col-lg-4">
+        <button class="btn btn-primary" routerLink="/editexp/{{skill.id}}">
+            <i class="bi bi-pencil"></i> Editar</button>
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash"></i> Borrar</button>
+        </div>
+
+    <!-- <article class="col-sm-6 col-md-4 col-lg-4">
         <circle-progress
-                [imageSrc]="'../assets/css.png'"
+                [imageSrc]="''"
                 [imageHeight]="100"
                 [imageWidth]="80"
                 [backgroundColor]="'#0077ff'"
@@ -39,11 +48,11 @@
                 [animation]="true"
                 [animationDuration]="800"
         ></circle-progress>
-    </article>
+    </article> -->
 
-    <article class="col-sm-6 col-md-4 col-lg-4">
+    <!-- <article class="col-sm-6 col-md-4 col-lg-4">
         <circle-progress
-                    [imageSrc]="'../assets/js.png'"
+                    [imageSrc]="''"
                     [imageHeight]="80"
                     [imageWidth]="80"
                     [backgroundColor]="'#0077ff'"
@@ -58,11 +67,11 @@
                     [animation]="true"
                     [animationDuration]="800"
         ></circle-progress>
-    </article>
+    </article> -->
 
-    <article class="col-sm-6 col-md-6 col-lg-6">
+    <!-- <article class="col-sm-6 col-md-6 col-lg-6">
         <circle-progress
-                        [imageSrc]="'../assets/ts.svg'"
+                        [imageSrc]="''"
                         [imageHeight]="80"
                         [imageWidth]="80"
                         [backgroundColor]="'#0077ff'"
@@ -77,11 +86,11 @@
                         [animation]="true"
                         [animationDuration]="800"
         ></circle-progress>
-    </article>
+    </article> -->
 
-    <article class="col-sm-12 col-md-6 col-lg-6">
+    <!-- <article class="col-sm-12 col-md-6 col-lg-6">
         <circle-progress
-                            [imageSrc]="'../assets/angular.png'"
+                            [imageSrc]="''"
                             [imageHeight]="80"
                             [imageWidth]="80"
                             [backgroundColor]="'#0077ff'"
@@ -97,17 +106,17 @@
                             [animationDuration]="800"
         ></circle-progress>
     </article>
-    </div>
+    </div> -->
 
-</section>
+
 
 <section class="section-habilities-2" data-aos="fade-down" data-aos-duration="1000">
-
+</section>
         <div class="row">
             <h3 class="text-light">Soft Skills:</h3>
-            <article class="col-sm-6 col-md-4 col-lg-4">
+            <!-- <article class="col-sm-6 col-md-4 col-lg-4">
             <circle-progress
-                [imageSrc]="'../assets/english.jpg'"
+                [imageSrc]="''"
                 [imageHeight]="80"
                 [imageWidth]="80"
                 [backgroundColor]="'#0077ff'"
@@ -122,11 +131,11 @@
                 [animation]="true"
                 [animationDuration]="800"
             ></circle-progress>
-            </article>
+            </article> -->
 
-        <article class="col-sm-6 col-md-4 col-lg-4">
+        <!-- <article class="col-sm-6 col-md-4 col-lg-4">
             <circle-progress
-                    [imageSrc]="'../assets/comunicacion.png'"
+                    [imageSrc]="''"
                     [imageHeight]="90"
                     [imageWidth]="90"
                     [backgroundColor]="'#0077ff'"
@@ -141,11 +150,11 @@
                     [animation]="true"
                     [animationDuration]="800"
             ></circle-progress>
-        </article>
+        </article> -->
 
-        <article class="col-sm-12 col-md-4 col-lg-4">
+        <!-- <article class="col-sm-12 col-md-4 col-lg-4">
             <circle-progress
-            [imageSrc]="'../assets/github.png'"
+            [imageSrc]="''"
             [imageHeight]="100"
             [imageWidth]="100"
             [backgroundColor]="'#0077ff'"
@@ -160,7 +169,5 @@
             [animation]="true"
             [animationDuration]="800"
             ></circle-progress>
-        </article>
+        </article> -->
         </div>
-
-</section>
