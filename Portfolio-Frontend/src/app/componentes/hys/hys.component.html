@@ -2,11 +2,10 @@
 
     <div class="row">
         <h2 class="text-light mt-2 text-center">Hard & Soft Skills</h2>
-        <h3 class="text-light mt-4">Hard Skills:</h3>
         <div>
             <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of skill">
+        <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of Skill">
         <circle-progress
             [percent]="(skill.porcentaje)"
             [radius]="100"
@@ -32,7 +31,7 @@
                 <i class="bi bi-trash"></i> Borrar</button>
         </div>
 
-<section class="section-habilities-2" data-aos="fade-down" data-aos-duration="1000">
+<!-- <section class="section-habilities-2" data-aos="fade-down" data-aos-duration="1000">
 </section>
         <div class="row">
             <h3 class="text-light">Soft Skills:</h3>
@@ -40,7 +39,7 @@
                 <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of skill">
+            <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of Skill">
                 <circle-progress
                     [percent]="(skill.porcentaje)"
                     [radius]="100"
@@ -59,12 +58,11 @@
                     [animation]="true"
                     [animationDuration]="800"
                 ></circle-progress>
-        
                 <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
                     <i class="bi bi-pencil"></i> Editar</button>
                     <button class="btn btn-danger" (click)="delete(skill.id)">
                         <i class="bi bi-trash"></i> Borrar</button>
-                </div>
+                </div> -->
             <!-- <article class="col-sm-6 col-md-4 col-lg-4">
             <circle-progress
                 [imageSrc]="''"
@@ -121,4 +119,3 @@
             [animationDuration]="800"
             ></circle-progress>
         </article> -->
-        </div>
