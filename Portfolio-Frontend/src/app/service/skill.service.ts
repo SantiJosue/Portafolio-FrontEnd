@@ -10,7 +10,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://portfolio-back-pjc0.onrender.com/personas/skill/';
+  URL = 'https://portfolio-back-pjc0.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 
