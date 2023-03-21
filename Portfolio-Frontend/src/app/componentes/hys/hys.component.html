@@ -25,95 +25,44 @@
             [animationDuration]="800"
         ></circle-progress>
 
-        <button class="btn btn-primary" routerLink="/editexp/{{skill.id}}">
+        <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
             <i class="bi bi-pencil"></i> Editar</button>
             <button class="btn btn-danger" (click)="delete(skill.id)">
                 <i class="bi bi-trash"></i> Borrar</button>
         </div>
 
-    <!-- <article class="col-sm-6 col-md-4 col-lg-4">
-        <circle-progress
-                [imageSrc]="''"
-                [imageHeight]="100"
-                [imageWidth]="80"
-                [backgroundColor]="'#0077ff'"
-                [showImage]="true"
-                [unitsFontSize]="'20'"
-                [percent]="90"
-                [radius]="100"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="8"
-                [outerStrokeColor]="'#0150fc'"
-                [innerStrokeColor]="'#023ec2'"
-                [animation]="true"
-                [animationDuration]="800"
-        ></circle-progress>
-    </article> -->
-
-    <!-- <article class="col-sm-6 col-md-4 col-lg-4">
-        <circle-progress
-                    [imageSrc]="''"
-                    [imageHeight]="80"
-                    [imageWidth]="80"
-                    [backgroundColor]="'#0077ff'"
-                    [showImage]="true"
-                    [unitsFontSize]="'20'"
-                    [percent]="70"
-                    [radius]="100"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8"
-                    [outerStrokeColor]="'#fcc101'"
-                    [innerStrokeColor]="'#cf9f00'"
-                    [animation]="true"
-                    [animationDuration]="800"
-        ></circle-progress>
-    </article> -->
-
-    <!-- <article class="col-sm-6 col-md-6 col-lg-6">
-        <circle-progress
-                        [imageSrc]="''"
-                        [imageHeight]="80"
-                        [imageWidth]="80"
-                        [backgroundColor]="'#0077ff'"
-                        [showImage]="true"
-                        [unitsFontSize]="'20'"
-                        [percent]="55"
-                        [radius]="100"
-                        [outerStrokeWidth]="16"
-                        [innerStrokeWidth]="8"
-                        [outerStrokeColor]="'#0026ff'"
-                        [innerStrokeColor]="'#0321ca'"
-                        [animation]="true"
-                        [animationDuration]="800"
-        ></circle-progress>
-    </article> -->
-
-    <!-- <article class="col-sm-12 col-md-6 col-lg-6">
-        <circle-progress
-                            [imageSrc]="''"
-                            [imageHeight]="80"
-                            [imageWidth]="80"
-                            [backgroundColor]="'#0077ff'"
-                            [showImage]="true"
-                            [unitsFontSize]="'20'"
-                            [percent]="50"
-                            [radius]="100"
-                            [outerStrokeWidth]="16"
-                            [innerStrokeWidth]="8"
-                            [outerStrokeColor]="'#d60303'"
-                            [innerStrokeColor]="'#a10101'"
-                            [animation]="true"
-                            [animationDuration]="800"
-        ></circle-progress>
-    </article>
-    </div> -->
-
-
-
 <section class="section-habilities-2" data-aos="fade-down" data-aos-duration="1000">
 </section>
         <div class="row">
             <h3 class="text-light">Soft Skills:</h3>
+            <div>
+                <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of skill">
+                <circle-progress
+                    [percent]="(skill.porcentaje)"
+                    [radius]="100"
+                    [imageSrc]="''"
+                    [title]="(skill.nombre)"
+                    [imageHeight]="100"
+                    [imageWidth]="100"
+                    [backgroundColor]="'#0077ff'"
+                    [showImage]="true"
+                    [unitsFontSize]="'20'"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="8"
+                    [outerStrokeColor]="'orange'"
+                    [innerStrokeColor]="'#c78202'"
+                    [animation]="true"
+                    [animationDuration]="800"
+                ></circle-progress>
+        
+                <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
+                    <i class="bi bi-pencil"></i> Editar</button>
+                    <button class="btn btn-danger" (click)="delete(skill.id)">
+                        <i class="bi bi-trash"></i> Borrar</button>
+                </div>
             <!-- <article class="col-sm-6 col-md-4 col-lg-4">
             <circle-progress
                 [imageSrc]="''"
