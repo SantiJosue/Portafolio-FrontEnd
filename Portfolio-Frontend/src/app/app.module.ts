@@ -23,6 +23,8 @@ import { EditeducacionComponent } from './componentes/educacion/edit-educacion.c
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditHysComponent } from './componentes/hys/edit-hys.component';
+import { NewHysComponent } from './componentes/hys/new-hys.component';
 
 
 
@@ -47,6 +49,8 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
     NewEducacionComponent,
     EducacionComponent,
     EditeducacionComponent,
+    EditHysComponent,
+    NewHysComponent,
   ],
   imports: [
     BrowserModule,
