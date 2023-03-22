@@ -1,0 +1,116 @@
+.study-container{
+    width: 100%;
+    padding: 40px;
+    border-top: 1px solid gray;
+}
+
+.study-container p{
+    margin-top: 5px;
+}
+
+.study-container ul{
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgba(30, 90, 255, 0.541);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.study-content{
+    width: 100%;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+}
+
+.study {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: #0051ffb0;
+    border: 3px solid #0059fffb;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-align: center; 
+}
+
+.study:hover{
+    background-color: rgba(30, 70, 252, 0.527);
+    cursor: pointer;
+}
+
+.study-title{
+    font-weight: 400;
+    text-align: center;  
+}
+
+@media (max-width: 992px) {
+
+    .study-container{
+        width: 100%;
+        padding: 0px;
+        border-top: 1px solid gray;
+    }
+
+    .study-container h2{
+        margin-top: 20px;
+    }
+    
+    .study-container p{
+        margin-top: 5px;
+    }
+    
+    .study-container ul{
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    
+    .btn{
+        margin: 5px;
+    }
+
+    .btn-añadir{
+        text-align: center;
+    }
+    
+    .study {
+        width: 100%;
+        padding: 5px 10px;
+        background: none;
+        border: none;
+        transition: all .3s ease;
+        text-align: center;
+    }
+
+    .study ul{
+        background-color: #0051ffb0;
+        border-radius: 10px;
+        border: 3px solid #0059fffb;
+    }
+
+    .study li{
+        margin-top: 10px;
+    }
+    
+    .study:hover{
+        background-color: rgba(30, 70, 252, 0.527);
+        cursor: pointer;
+    }
+    
+    .study-title{
+        font-weight: 400;
+        text-align: center;  
+    }
+
+}
