@@ -82,9 +82,16 @@
     
     .btn{
         margin: 5px;
+        text-align: center;
+    }
+
+    .buttons{
+        text-align: center;
+        width: 100%;
     }
 
     .btn-añadir{
+        width: 100%;
         text-align: center;
     }
     
