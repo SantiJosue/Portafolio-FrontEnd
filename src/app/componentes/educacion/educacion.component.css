@@ -29,6 +29,10 @@
     display: flex;
 }
 
+.btn{
+    margin: 10px;
+}
+
 .study {
     display: flex;
     flex-direction: column;

@@ -3,119 +3,37 @@
     <div class="row">
         <h2 class="text-light mt-2 text-center">Hard & Soft Skills</h2>
         <div>
-            <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
+            <button class="btn btn-primary" type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of Skill">
+        <div class="col-sm-6 col-md-4 col-lg-4" *ngFor="let skill of skill">
         <circle-progress
             [percent]="(skill.porcentaje)"
             [radius]="100"
             [imageSrc]="''"
             [title]="(skill.nombre)"
+            [titleColor]="'white'"
+            [titleFontSize]="'24'"
+            [titleFontWeight]="''"
             [showTitle]="true"
+            [showSubtitle]="false"
             [imageHeight]="100"
             [imageWidth]="100"
-            [backgroundColor]="'#0077ff'"
+            [backgroundColor]="'#0077ff79'"
             [showImage]="false"
+            [showUnits]="false"
             [unitsFontSize]="'20'"
             [outerStrokeWidth]="16"
             [innerStrokeWidth]="8"
-            [outerStrokeColor]="'orange'"
-            [innerStrokeColor]="'#c78202'"
+            [outerStrokeColor]="'#0077ff'"
+            [innerStrokeColor]="'#0077ff'"
             [animation]="true"
             [animationDuration]="800"
         ></circle-progress>
 
-        <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
-            <i class="bi bi-pencil"></i> Editar</button>
-            <button class="btn btn-danger" (click)="delete(skill.id)">
-                <i class="bi bi-trash"></i> Borrar</button>
-        </div>
-
-<!-- <section class="section-habilities-2" data-aos="fade-down" data-aos-duration="1000">
-</section>
-        <div class="row">
-            <h3 class="text-light">Soft Skills:</h3>
-            <div>
-                <button type="button" routerLink="/newHyS" class="btn btn-primary" *ngIf="isLogged">Añadir skill</button>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4" *ngForm="let skill of Skill">
-                <circle-progress
-                    [percent]="(skill.porcentaje)"
-                    [radius]="100"
-                    [imageSrc]="''"
-                    [title]="(skill.nombre)"
-                    [showTitle]="true"
-                    [imageHeight]="100"
-                    [imageWidth]="100"
-                    [backgroundColor]="'#0077ff'"
-                    [showImage]="false"
-                    [unitsFontSize]="'20'"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8"
-                    [outerStrokeColor]="'orange'"
-                    [innerStrokeColor]="'#c78202'"
-                    [animation]="true"
-                    [animationDuration]="800"
-                ></circle-progress>
-                <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
-                    <i class="bi bi-pencil"></i> Editar</button>
-                    <button class="btn btn-danger" (click)="delete(skill.id)">
+                <div class="buttons" *ngIf="isLogged">
+                        <button class="btn btn-primary" routerLink="/editHyS/{{skill.id}}">
+                        <i class="bi bi-pencil"></i> Editar</button>
+                        <button class="btn btn-danger" (click)="delete(skill.id)">
                         <i class="bi bi-trash"></i> Borrar</button>
-                </div> -->
-            <!-- <article class="col-sm-6 col-md-4 col-lg-4">
-            <circle-progress
-                [imageSrc]="''"
-                [imageHeight]="80"
-                [imageWidth]="80"
-                [backgroundColor]="'#0077ff'"
-                [showImage]="true"
-                [unitsFontSize]="'20'"
-                [percent]="60"
-                [radius]="100"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="8"
-                [outerStrokeColor]="'orange'"
-                [innerStrokeColor]="'#c78202'"
-                [animation]="true"
-                [animationDuration]="800"
-            ></circle-progress>
-            </article> -->
-
-        <!-- <article class="col-sm-6 col-md-4 col-lg-4">
-            <circle-progress
-                    [imageSrc]="''"
-                    [imageHeight]="90"
-                    [imageWidth]="90"
-                    [backgroundColor]="'#0077ff'"
-                    [showImage]="true"
-                    [unitsFontSize]="'20'"
-                    [percent]="90"
-                    [radius]="100"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8"
-                    [outerStrokeColor]="'#0150fc'"
-                    [innerStrokeColor]="'#023ec2'"
-                    [animation]="true"
-                    [animationDuration]="800"
-            ></circle-progress>
-        </article> -->
-
-        <!-- <article class="col-sm-12 col-md-4 col-lg-4">
-            <circle-progress
-            [imageSrc]="''"
-            [imageHeight]="100"
-            [imageWidth]="100"
-            [backgroundColor]="'#0077ff'"
-            [showImage]="true"
-            [unitsFontSize]="'20'"
-            [percent]="70"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#161b22'"
-            [innerStrokeColor]="'#242b36'"
-            [animation]="true"
-            [animationDuration]="800"
-            ></circle-progress>
-        </article> -->
+                </div>
+        </div>

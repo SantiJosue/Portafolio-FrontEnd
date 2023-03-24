@@ -14,3 +14,9 @@
 form{
     width: 100%;
 }
+
+.form-control{
+    background-color: #0077ff79;
+    color: white;
+    border: none;
+}

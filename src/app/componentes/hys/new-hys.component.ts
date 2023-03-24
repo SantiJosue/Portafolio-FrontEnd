@@ -17,7 +17,7 @@ constructor(private skillS: SkillService, private router: Router) { }
 ngOnInit(): void {
 }
 
-onCreate():void{
+onCreate(): void{
   const skill = new Skill(this.nombre, this.porcentaje);
   this.skillS.save(skill).subscribe(
     data => {

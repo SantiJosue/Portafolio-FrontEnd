@@ -13,15 +13,14 @@
                 <li><h4>{{Educacion.nombreE}}</h4></li>
                 <li><h6>{{Educacion.descripcionE}}</h6></li>
                 </div>
-                <div class="buttons">
-                    <li class="btn" *ngIf="isLogged">
+                <div class="buttons" *ngIf="isLogged">
+                    
                         <button class="btn btn-primary" routerLink="/editedu/{{Educacion.id}}">
                         <i class="bi bi-pencil"></i> Editar</button>
-                    </li>
-                    <li class="btn" *ngIf="isLogged">
+                    
                         <button class="btn btn-danger" (click)="delete(Educacion.id)">
                         <i class="bi bi-trash"></i> Borrar</button>
-                    </li>
+                    
                 </div>
             </ul>
     </div>

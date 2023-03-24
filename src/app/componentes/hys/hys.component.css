@@ -18,8 +18,13 @@
     padding: 40px;
 }
 
+.btn{
+    margin: 10px;
+}
+
 circle-progress{
     cursor: pointer;
+    overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -43,6 +48,15 @@ circle-progress{
 
     .section-habilities h4{
         margin: 1.5rem 0rem;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+
+    .buttons{
+        margin: 10px;
+        display: flex;
     }
 
 }
