@@ -2,9 +2,8 @@ export class persona{
     id?: number;
     nombre: string;
     apellido: string;
-    descripcion: string;
 
-    constructor(nombre: string,apellido: string, descripcion: string){
+    constructor(nombre: string,apellido: string){
         this.nombre = nombre;
         this.apellido = apellido;
     }
