@@ -41,15 +41,22 @@
 
 .section-description{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 40px;
     margin-top: 9rem;
     border-top: 1px solid gray;
 }
 
-.section-description h3{
+.btn-añadir{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.btn-añadir button{
+    margin-left: 12rem;
+}
+
+.section-description h2{
     text-align: center;
 }
 
@@ -142,5 +149,15 @@
         margin-top: 15px;
         width: 100%;
     } 
+
+    .btn-añadir{
+        display: flex;
+        margin-top: 1rem;
+        z-index: 100;
+    }
+    
+    .btn-añadir button{
+        margin-left: 0;
+    }
 
 }

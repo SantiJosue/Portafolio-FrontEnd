@@ -1,16 +1,20 @@
 <div class="container-fluid">
     <div class="row">
+        <div class="btn-añadir">
+            <button type="button" class="btn btn-primary mt-2" routerLink="/editacercade/1" *ngIf="isLogged">
+                Editar persona
+            </button>
+        </div>
         <div class="user-container d-flex">
-            <img src="../assets/user.jpg" class="img-fluid" alt="user-img">
+            <img src={{persona.img}} class="img-fluid" alt="user-img">
             <div class="user">
                 <h3 class="section-name">{{persona.nombre}} {{persona.apellido}}</h3>
                 <p class="section-title">Full Stack Developer Jr</p>
             </div>
         </div>
         <div class="section-description" data-aos="fade-right" data-aos-duration="1000">
-            <h2 class="text-light mt-2">Sobre mi</h2>
-            <p class="text-light">Actualmente estoy enfocado en el desarrollo Front-end. Mi principal objetivo es ampliar mis conocimientos en los distintos lenguajes de programacion y seguir creciendo profesionalmente.
-            </p>
+            <h2 class="text-light text-center mt-2">Sobre mi</h2>
+            <p class="text-light">{{persona.descripcion}}</p>
         </div>
     </div>    
 </div>

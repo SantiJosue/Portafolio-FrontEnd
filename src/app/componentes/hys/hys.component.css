@@ -55,8 +55,8 @@ circle-progress{
     }
 
     .buttons{
-        margin: 10px;
         display: flex;
+        justify-content: center;
     }
 
 }

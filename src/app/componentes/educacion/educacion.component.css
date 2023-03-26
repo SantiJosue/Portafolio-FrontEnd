@@ -86,8 +86,7 @@
     }
 
     .buttons{
-        text-align: center;
-        width: 100%;
+        justify-content: center;
     }
 
     .btn-añadir{

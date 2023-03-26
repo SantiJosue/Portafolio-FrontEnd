@@ -25,6 +25,10 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { EditHysComponent } from './componentes/hys/edit-hys.component';
 import { NewHysComponent } from './componentes/hys/new-hys.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -51,13 +55,16 @@ import { NewHysComponent } from './componentes/hys/new-hys.component';
     EditeducacionComponent,
     EditHysComponent,
     NewHysComponent,
+    EditAcercaDeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
