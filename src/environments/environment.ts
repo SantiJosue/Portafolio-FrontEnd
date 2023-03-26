@@ -13,7 +13,7 @@ export const environment = {
     messagingSenderId: '575124234727',
   },
   production: false,
-  URL: 'http://localhost:8080/'
+  //URL: 'http://localhost:8080/'
 };
 
 /*

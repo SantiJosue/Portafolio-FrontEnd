@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 14vh;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@ footer p a{
 @media (max-width: 992px) {
 
     footer{
-        padding-top: 15px;
-        height: 12vh;
+        padding-top: 25px;
+        height: 15vh;
     }
 
     footer p{

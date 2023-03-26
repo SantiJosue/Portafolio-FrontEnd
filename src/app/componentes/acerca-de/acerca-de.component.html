@@ -9,7 +9,7 @@
         </div>
         <div class="section-description" data-aos="fade-right" data-aos-duration="1000">
             <h2 class="text-light text-center mt-2">Sobre mi</h2>
-            <p class="text-light">Actualmente estoy enfocado en el desarrollo Front-end. Mi principal objetivo es ampliar mis conocimientos en los distintos lenguajes de programacion y seguir creciendo profesionalmente.</p>
+            <p class="text-light" *ngIf="persona">{{persona.descripcion}}</p>
         </div>
     </div>    
 </div>
